@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kareem Mohamed - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="glass-nav">
+    <div class="nav-container">
+      <div class="logo">Kareem <span>Mohamed</span></div>
+      <div class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <div class="dropdown">
+          <a href="#projects">Projects</a>
+          <div class="dropdown-content">
+            <!-- Dynamically populated via JavaScript -->
+          </div>
+        </div>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="kareem.pdf" class="cv-link" download>Download CV</a>
+      </div>
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero" data-aos="fade-in">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="highlight">Kareem Mohamed</span>
+          <span class="typing-text"></span>
+        </h1>
+        <p class="hero-subtitle">AI & Software Engineer | Class of 2026</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Work</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Contact Me</span>
+            <i class="fas fa-paper-plane"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="profile-3d">
+          <img src="person/kareem.jpeg" alt="Kareem Mohamed 3D" class="profile-img-3d">
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#about"><i class="fas fa-chevron-down"></i></a>
+    </div>
+    <div class="hero-particles" id="particles-js"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="about-content" data-aos="fade-up">
+      <div class="about-image">
+        <div class="image-wrapper">
+          <img src="person/kareem.jpeg" alt="Kareem Mohamed" class="profile-img">
+          <div class="image-border"></div>
+          <div class="image-hover-effect"></div>
+        </div>
+      </div>
+      <div class="about-text">
+        <h3>Who Am I?</h3>
+        <p>I am an AI and Software Engineer passionate about building innovative solutions using machine learning, IoT, and web technologies.</p>
+        <div class="about-info">
+          <div class="info-item">
+            <span class="info-label">Name:</span>
+            <span class="info-value">Kareem Mohamed</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Email:</span>
+            <span class="info-value">km0848230@gmail.com</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Education:</span>
+            <span class="info-value">B.Sc. in Computer Science, 2026</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Location:</span>
+            <span class="info-value">Cairo, Egypt</span>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" id="linkedinTrigger"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Kareemmohamed433"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-light">
+    <h2 class="section-title">My <span>Projects</span></h2>
+    <div class="projects-grid" data-aos="fade-up">
+      <!-- Face Recognition System -->
+      <div class="project-card" id="face-recognition-project">
+        <div class="project-image">
+          <div class="project-image-inner">
+            <img src="at/1 (1).png" alt="Face Recognition System Screenshot" loading="lazy">
+          </div>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>OpenCV</span>
+            <span>Flask</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Face Recognition System</h3>
+          <p>Smart attendance system using face recognition, OpenCV, Flask, and Supabase.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Kareemmohamed433/attendanceprogram" target="_blank" class="project-link">
+              <i class="fas fa-code"></i> View Code
+            </a>
+            <a href="#face-recognition-gallery" class="project-link gallery-trigger">
+              <i class="fas fa-images"></i> Gallery
+            </a>
+          </div>
+        </div>
+        <div class="project-gallery" id="face-recognition-gallery">
+          <h4>Project Gallery</h4>
+          <div class="gallery-container">
+            <div class="gallery-item"><img src="at/1 (1).png" alt="Face Recognition Image 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="at/1 (2).png" alt="Face Recognition Image 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="at/1 (3).png" alt="Face Recognition Image 3" loading="lazy"></div>
+            <div class="gallery-item"><img src="at/1 (4).png" alt="Face Recognition Image 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="at/1 (5).png" alt="Face Recognition Image 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="at/1 (6).png" alt="Face Recognition Image 3" loading="lazy"></div>
+            <div class="gallery-item"><img src="at/1 (7).png" alt="Face Recognition Image 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="at/1 (8).png" alt="Face Recognition Image 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="at/1 (9).png" alt="Face Recognition Image 3" loading="lazy"></div>
+            <div class="gallery-item"><img src="at/1 (10).png" alt="Face Recognition Image 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="at/1 (11).png" alt="Face Recognition Image 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="at/1 (12).png" alt="Face Recognition Image 3" loading="lazy"></div>
+            <div class="gallery-item"><img src="at/1 (13).png" alt="Face Recognition Image 1" loading="lazy"></div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Potato Leaf Detection -->
+      <div class="project-card" id="potato-leaf-detection-project">
+        <div class="project-image">
+          <div class="project-image-inner">
+            <img src="pota/1.JPG" alt="Potato Leaf Detection Screenshot" loading="lazy">
+          </div>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>TensorFlow</span>
+            <span>Jupyter</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Potato Leaf Detection</h3>
+          <p>AI model to detect diseases in potato leaves using CNN, TensorFlow, and Jupyter Notebook.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Kareemmohamed433/detect_potato/blob/main/classfication_the_image.ipynb" target="_blank" class="project-link">
+              <i class="fas fa-code"></i> View Code
+            </a>
+            <a href="#potato-leaf-detection-gallery" class="project-link gallery-trigger">
+              <i class="fas fa-images"></i> Gallery
+            </a>
+          </div>
+        </div>
+        <div class="project-gallery" id="potato-leaf-detection-gallery">
+          <h4>Project Gallery</h4>
+          <div class="gallery-container">
+            <div class="gallery-item"><img src="potato/1.png" alt="Potato Leaf Image 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="potato/2.png" alt="Potato Leaf Image 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="potato/3.png" alt="Potato Leaf Image 3" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+      <!-- ESP32 IoT System -->
+      <div class="project-card" id="esp32-iot-system-project">
+        <div class="project-image">
+          <div class="project-image-inner">
+            <img src="iot/1.png" alt="ESP32 IoT System Screenshot" loading="lazy">
+          </div>
+          <div class="project-tags">
+            <span>ESP32</span>
+            <span>SinricPro</span>
+            <span>CloudAMQP</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>ESP32 IoT System</h3>
+          <p>IoT system using ESP32 to control and monitor devices through a web dashboard.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Kareemmohamed433/smarthome" target="_blank" class="project-link">
+              <i class="fas fa-code"></i> View Code
+            </a>
+            <a href="#esp32-iot-system-gallery" class="project-link gallery-trigger">
+              <i class="fas fa-images"></i> Gallery
+            </a>
+          </div>
+        </div>
+        <div class="project-gallery" id="esp32-iot-system-gallery">
+          <h4>Project Gallery</h4>
+          <div class="gallery-container">
+            <div class="gallery-item"><img src="iot/1.png" alt="IoT Image 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="iot/2.png" alt="IoT Image 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="iot/3.png" alt="IoT Image 3" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Shop Website -->
+      <div class="project-card" id="shop-website-project">
+        <div class="project-image">
+          <div class="project-image-inner">
+            <img src="web/1 (2).png" alt="Shop Website Screenshot" loading="lazy">
+          </div>
+          <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Flask</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Shop Website</h3>
+          <p>Modern e-commerce website built with HTML, CSS, JavaScript, and Flask backend.</p>
+          <div class="project-actions">
+            <a href="https://drive.google.com/drive/folders/1g12XKBTCF49xgMm7xN8OdW4Bq4g0RRQM?usp=sharing" target="_blank" class="project-link">
+              <i class="fas fa-code"></i> View Code
+            </a>
+            <a href="#shop-website-gallery" class="project-link gallery-trigger">
+              <i class="fas fa-images"></i> Gallery
+            </a>
+          </div>
+        </div>
+        <div class="project-gallery" id="shop-website-gallery">
+          <h4>Project Gallery</h4>
+          <div class="gallery-container">
+            <div class="gallery-item"><img src="web/1 (2).png" alt="Shop Image 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (1).png" alt="Shop Image 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (3).png" alt="Shop Image 3" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (4).png" alt="Shop Image 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (5).png" alt="Shop Image 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (6).png" alt="Shop Image 3" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (7).png" alt="Shop Image 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (8).png" alt="Shop Image 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (9).png" alt="Shop Image 3" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (10).png" alt="Shop Image 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (11).png" alt="Shop Image 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (12).png" alt="Shop Image 3" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (13).png" alt="Shop Image 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (14).png" alt="Shop Image 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (15).png" alt="Shop Image 3" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (16).png" alt="Shop Image 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (17).png" alt="Shop Image 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (18).png" alt="Shop Image 3" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (19).png" alt="Shop Image 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (20).png" alt="Shop Image 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (21).png" alt="Shop Image 3" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (22).png" alt="Shop Image 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (23).png" alt="Shop Image 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (24).png" alt="Shop Image 3" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (25).png" alt="Shop Image 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (26).png" alt="Shop Image 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (27).png" alt="Shop Image 3" loading="lazy"></div>
+            <div class="gallery-item"><img src="web/1 (28).png" alt="Shop Image 3" loading="lazy"></div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Data Dashboard -->
+      <div class="project-card" id="data-dashboard-project">
+        <div class="project-image">
+          <div class="project-image-inner">
+            <img src="dash/1.png" alt="Data Dashboard Screenshot" loading="lazy">
+          </div>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Matplotlib</span>
+            <span>Seaborn</span>
+            <span>Streamlit</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Data Dashboard</h3>
+          <p>Data visualization dashboard built with Python for analytical insights.</p>
+          <div class="project-actions">
+            <a href="#data-dashboard-gallery" class="project-link gallery-trigger">
+              <i class="fas fa-images"></i> Gallery
+            </a>
+          </div>
+        </div>
+        <div class="project-gallery" id="data-dashboard-gallery">
+          <h4>Project Gallery</h4>
+          <div class="gallery-container">
+            <div class="gallery-item"><img src="dash/1.png" alt="Dashboard Image 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="dash/2.png" alt="Dashboard Image 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="dash/3.png" alt="Dashboard Image 3" loading="lazy"></div>
+            <div class="gallery-item"><img src="dash/4.png" alt="Dashboard Image 3" loading="lazy"></div>
+            <div class="gallery-item"><img src="dash/5.png" alt="Dashboard Image 3" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Breast Cancer Diagnosis -->
+      <div class="project-card" id="breast-cancer-diagnosis-project">
+        <div class="project-image">
+          <div class="project-image-inner">
+            <img src="breastcancer/1.png" alt="Breast Cancer Diagnosis Screenshot" loading="lazy">
+          </div>
+          <div class="project-tags">
+            <span>FastAPI</span>
+            <span>Scikit-learn</span>
+            <span>Bootstrap</span>
+            <span>Uvicorn</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Breast Cancer Diagnosis Web App</h3>
+          <p>Interactive FastAPI app predicting breast cancer using scikit-learn.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Kareemmohamed433/Breast-Cancer-Analysis" target="_blank" class="project-link">
+              <i class="fas fa-code"></i> View Code
+            </a>
+            <a href="#breast-cancer-diagnosis-gallery" class="project-link gallery-trigger">
+              <i class="fas fa-images"></i> Gallery
+            </a>
+          </div>
+        </div>
+        <div class="project-gallery" id="breast-cancer-diagnosis-gallery">
+          <h4>Project Gallery</h4>
+          <div class="gallery-container">
+            <div class="gallery-item"><img src="breastcancer/1.png" alt="Breast Cancer Image 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="breastcancer/2.png" alt="Breast Cancer Image 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="breastcancer/3.png" alt="Breast Cancer Image 3" loading="lazy"></div>
+            <div class="gallery-item"><img src="breastcancer/4.png" alt="Breast Cancer Image 4" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Skin Cancer Classifier -->
+      <div class="project-card" id="skin-cancer-classifier-project">
+        <div class="project-image">
+          <div class="project-image-inner">
+            <img src="skincancer/1.png" alt="Skin Cancer Classifier Screenshot" loading="lazy">
+          </div>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>TensorFlow</span>
+            <span>Bootstrap</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Skin Cancer Classifier Web App</h3>
+          <p>Deep learning web app classifying skin lesions using ResNet50 and MobileNetV2.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Kareemmohamed433/Skin-cancer" target="_blank" class="project-link">
+              <i class="fas fa-code"></i> View Code
+            </a>
+            <a href="#skin-cancer-classifier-gallery" class="project-link gallery-trigger">
+              <i class="fas fa-images"></i> Gallery
+            </a>
+          </div>
+        </div>
+        <div class="project-gallery" id="skin-cancer-classifier-gallery">
+          <h4>Project Gallery</h4>
+          <div class="gallery-container">
+            <div class="gallery-item"><img src="skincancer/1.png" alt="Skin Cancer Image 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="skincancer/2.png" alt="Skin Cancer Image 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="skincancer/3.png" alt="Skin Cancer Image 3" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Arabic Heart Disease Chatbot -->
+      <div class="project-card" id="arabic-heart-disease-chatbot-project">
+        <div class="project-image">
+          <div class="project-image-inner">
+            <img src="chat/1.png" alt="Arabic Heart Disease Chatbot Screenshot" loading="lazy">
+          </div>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>Scikit-learn</span>
+            <span>XGBoost</span>
+            <span>Arabic NLP</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Arabic Heart Disease Chatbot</h3>
+          <p>AI-powered Arabic medical chatbot for diagnosing heart disease.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Kareemmohamed433/chatbot" target="_blank" class="project-link">
+              <i class="fas fa-code"></i> View Code
+            </a>
+            <a href="#arabic-heart-disease-chatbot-gallery" class="project-link gallery-trigger">
+              <i class="fas fa-images"></i> Gallery
+            </a>
+          </div>
+        </div>
+        <div class="project-gallery" id="arabic-heart-disease-chatbot-gallery">
+          <h4>Project Gallery</h4>
+          <div class="gallery-container">
+            <div class="gallery-item"><img src="chat/1.png" alt="Chatbot Image 1" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2 class="section-title">My <span>Skills</span></h2>
+    <div class="skills-container" data-aos="fade-up">
+      <div class="skill-category">
+        <h3><i class="fas fa-code"></i> Programming</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="radial-progress" data-value="90">
+              <span class="progress-value">0%</span>
+            </div>
+            <div class="skill-info">
+              <i class="fab fa-python skill-icon"></i>
+              <span>Python</span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="radial-progress" data-value="85">
+              <span class="progress-value">0%</span>
+            </div>
+            <div class="skill-info">
+              <i class="fab fa-js skill-icon"></i>
+              <span>JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="radial-progress" data-value="80">
+              <span class="progress-value">0%</span>
+            </div>
+            <div class="skill-info">
+              <i class="fab fa-html5 skill-icon"></i>
+              <span>HTML/CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fas fa-brain"></i> AI & ML</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="radial-progress" data-value="88">
+              <span class="progress-value">0%</span>
+            </div>
+            <div class="skill-info">
+              <i class="fas fa-cogs skill-icon"></i>
+              <span>TensorFlow</span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="radial-progress" data-value="85">
+              <span class="progress-value">0%</span>
+            </div>
+            <div class="skill-info">
+              <i class="fas fa-cogs skill-icon"></i>
+              <span>Scikit-learn</span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="radial-progress" data-value="80">
+              <span class="progress-value">0%</span>
+            </div>
+            <div class="skill-info">
+              <i class="fas fa-cogs skill-icon"></i>
+              <span>XGBoost</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-light">
+    <h2 class="section-title">Get In <span>Touch</span></h2>
+    <div class="contact-container" data-aos="fade-up">
+      <div class="contact-info">
+        <div class="contact-card">
+          <i class="fas fa-envelope contact-icon"></i>
+          <div class="contact-details">
+            <h4>Email</h4>
+            <a href="mailto:km0848230@gmail.com">km0848230@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <i class="fab fa-whatsapp contact-icon"></i>
+          <div class="contact-details">
+            <h4>WhatsApp</h4>
+            <a href="https://wa.me/201022957599">+20 102 295 7599</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <i class="fab fa-linkedin contact-icon"></i>
+          <div class="contact-details">
+            <h4>LinkedIn</h4>
+            <a href="#" id="linkedinTriggerContact">Kareem Mohamed</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+          <div class="form-group floating">
+            <input type="text" id="name" name="name" required>
+            <label for="name">Your Name</label>
+            <div class="underline"></div>
+          </div>
+          <div class="form-group floating">
+            <input type="email" id="email" name="email" required>
+            <label for="email">Your Email</label>
+            <div class="underline"></div>
+          </div>
+          <div class="form-group floating">
+            <input type="text" id="subject" name="subject">
+            <label for="subject">Subject</label>
+            <div class="underline"></div>
+          </div>
+          <div class="form-group floating">
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message">Your Message</label>
+            <div class="underline"></div>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <span class="submit-text">Send Message</span>
+            <span class="spinner"><i class="fas fa-spinner fa-spin"></i></span>
+          </button>
+          <div id="form-status" class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Kareem <span>Mohamed</span></div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" id="linkedinTriggerFooter"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Kareemmohamed433"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Kareem Mohamed. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LinkedIn Modal -->
+  <div class="linkedin-modal" id="linkedinModal">
+    <div class="linkedin-modal-content">
+      <span class="close-linkedin" id="closeLinkedin">&times;</span>
+      <img src="person/kareem.jpeg" alt="Kareem Mohamed" class="modal-image">
+      <h3>Kareem Mohamed</h3>
+      <p>AI & Software Engineer | Class of 2026</p>
+      <h4>Skills</h4>
+      <ul>
+        <li>Python, TensorFlow, Scikit-learn</li>
+        <li>JavaScript, HTML, CSS</li>
+        <li>IoT, ESP32, Flask</li>
+      </ul>
+      <a href="https://www.linkedin.com/in/kareem-mohamed-433" target="_blank" class="btn">Visit LinkedIn Profile</a>
+    </div>
+  </div>
+
+  <!-- Chatbot -->
+  <div class="chat-icon" id="chatIcon" title="Chat with AI Assistant">
+    <i class="fas fa-comment"></i>
+  </div>
+  <div class="chat-container" id="chatContainer">
+    <div class="chat-header">
+      <div class="chat-profile">
+        <img src="person/kareem.jpeg" alt="Kareem Mohamed" class="chat-image">
+        <div class="chat-info">
+          <h3 id="chatTitle">AI Assistant</h3>
+          <span class="chat-status">Online</span>
+        </div>
+      </div>
+      <button class="close-chat" id="closeChat">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="chat-box" id="chatBox"></div>
+    <div class="input-area">
+      <textarea name="text" id="chatInput" placeholder="Type your message..." required></textarea>
+      <button id="sendMessage">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+    <div class="chat-options">
+      <button class="quick-reply" data-message="Tell me about your projects">
+        <i class="fas fa-project-diagram"></i> Projects
+      </button>
+      <button class="quick-reply" data-message="Download CV">
+        <i class="fas fa-file-download"></i> CV
+      </button>
+      <button class="quick-reply" data-message="Contact info">
+        <i class="fas fa-envelope"></i> Contact
+      </button>
+    </div>
+  </div>
+
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
